@@ -1,0 +1,26 @@
+syntax = "proto2";
+option java_outer_classname="EventProtobufWrapper";
+package com.hubbleconnected.server.protobuf.v1.protowrapper;
+
+/***** IOT transaction messages *****/
+/* Packet header message */
+message DeviceEvent {
+    required string userid = 1;
+    required fixed64 epochvalue = 2;
+    required string deviceid = 3;
+    required fixed32 alert = 4;
+    required string bucketid = 5;
+    required string class = 6;
+    required string data = 7;
+    required string eventcode = 8;
+    required fixed32 eventcounter = 9;
+    required fixed64 eventtime = 10;
+    required fixed32 filesize = 11;
+    required string id = 12;
+    required bool isdeleted = 13;
+    required string parentid = 14;
+    required string profileid = 15;
+    required fixed32 storagemode = 16;
+    required fixed32 unit = 17;
+    required string value = 18;
+}
